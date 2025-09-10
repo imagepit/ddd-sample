@@ -1,6 +1,13 @@
 # TODO API - Domain Driven Design Sample
 
 Spring Boot と Java 17 を使用したドメイン駆動設計(DDD)に基づくTODO管理REST APIです。
+（Claude Code Sonnet 4で生成）
+
+### プロンプト
+
+```prompt
+簡単なTODOアプリのREST APIをドメイン駆動設計で作成したい。Java17+Spring Bootでお願いします。
+```
 
 ## 必要要件
 
