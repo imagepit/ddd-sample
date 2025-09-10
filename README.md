@@ -14,6 +14,35 @@ Spring Boot と Java 17 を使用したドメイン駆動設計(DDD)に基づく
 - Java 17
 - Gradle 8.1.1
 
+## ファイル構成
+
+```
+src/main/java/com/example/todo/
+  ├── domain/
+  │   ├── model/
+  │   │   ├── Todo.java (エンティティ)
+  │   │   ├── TodoId.java (バリューオブジェクト)
+  │   │   ├── Title.java (バリューオブジェクト)
+  │   │   └── Priority.java (列挙型)
+  │   ├── repository/
+  │   │   └── TodoRepository.java
+  (リポジトリインターフェース)
+  │   └── service/
+  │       └── TodoService.java (ドメインサービス)
+  ├── application/
+  │   ├── dto/
+  │   │   ├── TodoDto.java
+  │   │   └── CreateTodoCommand.java
+  │   └── service/
+  │       └── TodoApplicationService.java
+  ├── infrastructure/
+  │   └── persistence/
+  │       └── InMemoryTodoRepository.java
+  └── presentation/
+      └── controller/
+          └── TodoController.java
+```
+
 ## セットアップ
 
 ### Java 17のインストール (macOS)
